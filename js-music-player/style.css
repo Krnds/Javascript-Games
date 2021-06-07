@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --pink: #ff546e;
+  --purple: #52297c;
+  --lilas: #b79fe7;
+  --lightblack: #434343;
+  --white: #ffffff;
+  --darkwhite: #dce0e5;
+  --pinkshadow: #ffcad2;
+  --lightbshadow: #9a9a9a;
+  --color1: #69c8cf;
+  --color2: #262a32;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  border-radius: 15px;
+  padding: 25px 30px;
+  background-color: var(--white);
+  box-shadow: 0px 6px 15px var(--lightbshadow);
+}
+.wrapper i {
+  cursor: pointer;
+  height: max-content;
+}
+
+.top-bar,
+.progress-area .timer,
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar i {
+  font-size: 30px;
+  color: var(--lightblack);
+}
+
+.top-bar span {
+  font-size: 16px;
+  color: var(--lightblack);
+}
+
+.img-area {
+  height: 300px;
+  width: 100%;
+  margin-top: 15px; /*25 */
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px var(--lightbshadow);
+}
+
+.img-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.song-details {
+  text-align: center;
+  margin: 15px 0px;
+  color: var(--lightblack);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.song-details .name {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.song-details .artist {
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.progress-area {
+  height: 9px;
+  width: 100%;
+  background-color: var(--darkwhite);
+  border-radius: 50px;
+}
+
+.progress-area .progress-bar {
+  height: inherit;
+  width: 50%;
+  background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+  border-radius: inherit;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-color: black;
+  position: absolute;
+  border-radius: inherit;
+  top: 50%;
+  right: -5px; /* dépend où est la barre de progression */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+}
+
+.progress-area .timer {
+  margin-top: 2px;
+}
+
+.timer span {
+  font-size: 13px;
+  color: var(--lightblack);
+}
+
+.controls {
+  margin: 30px 0 5px 0;
+}
+
+.controls i {
+  font-size: 28px;
+}
+
+.controls #prev {
+  margin-right: -13px;
+}
+
+.controls #next {
+  margin-left: -13px;
+}
+
+.play-pause {
+  height: 45px;
+  width: 45px;
+  background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+  box-shadow: 0px 0px 5px var(--color1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-pause::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+
+}
+
+/* ARTIST BAISSER DE QQ PIXELS */

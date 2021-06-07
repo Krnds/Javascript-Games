@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class=material-icons>expand_more</i>
+            <span>Now playing</span>
+            <i class="material-icons">
+                more_horiz
+            </i>
+        </div>
+        <div class="img-area">
+            <img src="cover/cover_memphis.jpg" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name">Memphis May Fire - Blood & Water</p>
+            <p class="artist">Blood & Water</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+            </div>
+            <div class="timer">
+                <span class="current">0:20</span>
+                <span class="current">3.51</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Playlist</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="row">
+                    <span></span>
+                    <p></p>
+                </div>
+                <span class="audio-duration">3:40</span>
+            </li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+
+</html>
