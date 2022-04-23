@@ -1,0 +1,30 @@
+* {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #13ac96;
+  letter-spacing: 0.2rem;
+  color: #13ac96;
+  display: flex;
+  margin-top: 2rem;
+  font-size: 3rem;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+}
